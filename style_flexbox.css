@@ -1,0 +1,21 @@
+ body
+ {	
+ 	display: flex;
+ 	flex-direction:column;
+ 	font-family: Raleway sans-serif;
+ } 
+
+header
+{
+	display:flex;
+	flex-direction: row;
+}
+
+
+
+ul
+{
+	list-style-type: none;	
+	display: flex;
+}
+
