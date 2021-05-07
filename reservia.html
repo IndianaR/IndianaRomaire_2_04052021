@@ -5,51 +5,66 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style_flexbox.css" />
         <link rel="stylesheet" href="style2.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');</style>
         <title>Reservia</title>
     </head>
     
     <body>
-        <div id="bloc_page">
-            <header>
-            	<div> <p><img src="images/logo/Reservia@3x.png" alt="logo"/></p>
-	            	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-	          		<p>En plein centre ville ou en pleine nature</p> 
-	          			
-	          		<form method="post">
-	          			<p><img src= "images/icons_fontawesome/map-marker.png"/> <!--mettre .svg-->
-	          				<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
-	          				<input type="submit" value="Rechercher">
-	          			</p>
-	          		</form>
-	          		<label><form method="post">Filtres <!--to display the word Filtres-->
-	          			<label><input type="checkbox" checked id="prix">Economique</label>
-	          			<label><input type="checkbox" checked id=Familial>Familial</label>
-		          		<label><input type="checkbox" checked id=Romantique>Romantique</label>
-		          		<label><input type="checkbox" checked id=Animaux>Animaux autorisées</label>
-					</form></label>
-          		</div>
-            	<nav>
-            		<ul>
-            			<li><a href="#ancre_hebergement" title="Hébergements">Hébergements</a></li>
-            			<li><a href="#ancre_activités" title="Activités">Activités</a></li>
-            			<li><a href="" title="S'inscrire">S'inscrire</a></li>
-            			<!--remove the bullets with css-->
-            		</ul>
-            	</nav>
+    	
+        <header>
+        	<div class=top-header> 
+        		<p><img src="images/logo/Reservia@3x.png" alt="logo" id="logo"/></p>
+        		<nav>
+            	<ul>
+            		<li><a href="#ancre_hebergement" title="Hébergements">Hébergements</a></li>
+            		<li><a href="#ancre_activités" title="Activités">Activités</a></li>
+            		<li><a href="#ancre_s'inscrire" title="S'inscrire">S'inscrire</a></li>
+            	</ul>
+           		</nav>
+           	</div>
+	           
 
-            </header>
-            <section>
-            	<h1 id="ancre_herbergement"> Hébergements à Marseille</h1>
-               	<aside>
-            	</aside>
-            </section>
-          		<h1 id="ancre_activités"> Activités à Marseille</h1>
-            <section>
-            </section>
-            <footer>
-            </footer>
-            <!--lieu  icon <i class="fas fa-map-marker-alt"></i>
+	        <div class="bottom-header">
+	         	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+	          	<h2>En plein centre ville ou en pleine nature</h2> 
+	          			
+	          	<form method="post" >
+	          		
+
+	          		<p class="searchbox">
+	          			<span class=map_marker><i class="fas fa-map-marker-alt fa-xs"></i></span>
+	          			<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
+	          			<input type="submit" id="search" value="Rechercher">
+	          		</p>
+	          	</form>
+	          	<label><form method="post">Filtres  <!--circle class does exist  or use border radius-->
+	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></i></span>Economique</button>
+	          		<button class="buttonfilter" onclick="filterSelection('Familial')"><span class="child_marker"><i class="fas fa-child"></i></span>Familial</button>	
+		          	<button class="buttonfilter" onclick="filterSelection('Romantique')"><span class="heart_marker"><i class="fas fa-heart"></i></span>Romantique</button>
+		          	<button class="buttonfilter" onclick="filterSelection('Animaux autorisés')"><span class="pet_marker"><i class="fas fa-dog"></i></span>Animaux autorisés</button>
+				</form></label>
+          	</div>
+            
+        </header>
+
+        <!--
+        <section id="section1">
+            <h1 id="ancre_herbergement"> Hébergements à Marseille</h1>
+            <aside>
+            </aside>
+        </section>
+          		
+        <section id="section2">
+            <h1 id="ancre_activités"> Activités à Marseille</h1>
+        </section>
+        <footer>
+        </footer>
+    -->
+    </body>
+
+
+            <!--
 
             	stars icon <i class="fas fa-star"></i>-->
             
