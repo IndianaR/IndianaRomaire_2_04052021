@@ -1,3 +1,13 @@
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+  margin:0;
+  margin-top: 0.3%
+}
+
 h1
 {	font-weight:bold;
 	font-size:1.0em;
@@ -34,22 +44,16 @@ form
 .nbLogt
 {font-size:0.6em;}
 
-body {
-  display: flex;
-  width: 93%;
-  flex-direction: column;
-  font-family: Raleway, sans-serif;
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  top-margin:0%;
-}
 
 
 header /*container of top-header and bottom-header*/ 
 {
   display: flex;
-  width: 100%;
   flex-direction: column;
+  width: 93%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  
 }
 
 /*Top header style*/

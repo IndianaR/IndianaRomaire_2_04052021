@@ -2,12 +2,12 @@
 
 footer
 {
+	display:flex;
 	font-family: Raleway, sans-serif;
-  	display:flex;
-	background-color:#F2F2F2;
-	justify-content:space-between;
-	width:100%;
+  	width:100%;
+  	background-color:#F2F2F2;
 }
+
 h3
 {
 	font-size:0.8em;
@@ -19,12 +19,12 @@ h3
 {
 	display:flex;
 	flex-direction: column;
-	border:1px solid blue;
 	margin:0;
 	justify-content:flex-start;
 	padding-left:0;
 	align-items:flex-start;
 }
+.apropos{margin-left: 3.5%;}
 .customized{color:black;}
 
 
