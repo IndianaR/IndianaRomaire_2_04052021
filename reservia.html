@@ -1,17 +1,16 @@
-<!-- map marker and star icons downloaded from fontawesome.com-->
+<!-- icons downloaded from fontawesome.com-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style_flexbox.css" />
-        <link rel="stylesheet" href="style2.css" />
+        <link rel="stylesheet" href="style_header.css" />
+        <link rel="stylesheet" href="style_footer.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');</style>
         <title>Reservia</title>
     </head>
     
-    <body>
-    	
+    <body>   	
         <header>
         	<div class=top-header> 
         		<p><img src="images/logo/Reservia@3x.png" alt="logo" id="logo"/></p>
@@ -30,25 +29,24 @@
 	          	<h2>En plein centre ville ou en pleine nature</h2> 
 	          			
 	          	<form method="post" >
-	          		
-
 	          		<p class="searchbox">
 	          			<span class=map_marker><i class="fas fa-map-marker-alt fa-xs"></i></span>
 	          			<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
 	          			<input type="submit" id="search" value="Rechercher">
 	          		</p>
 	          	</form>
-	          	<label><form method="post">Filtres  <!--circle class does exist  or use border radius-->
-	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></i></span>Economique</button>
+	          	<form method="post">Filtres  
+	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></span></i>Economique</button>
 	          		<button class="buttonfilter" onclick="filterSelection('Familial')"><span class="child_marker"><i class="fas fa-child"></i></span>Familial</button>	
 		          	<button class="buttonfilter" onclick="filterSelection('Romantique')"><span class="heart_marker"><i class="fas fa-heart"></i></span>Romantique</button>
 		          	<button class="buttonfilter" onclick="filterSelection('Animaux autorisés')"><span class="pet_marker"><i class="fas fa-dog"></i></span>Animaux autorisés</button>
-				</form></label>
+				</form>
+				<p class="nbLogt"><span class=info_marker><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
           	</div>
-            
         </header>
 
-        <!--
+
+        
         <section id="section1">
             <h1 id="ancre_herbergement"> Hébergements à Marseille</h1>
             <aside>
@@ -58,11 +56,26 @@
         <section id="section2">
             <h1 id="ancre_activités"> Activités à Marseille</h1>
         </section>
-        <footer>
-        </footer>
-    -->
-    </body>
 
+    	<footer>
+       		<ul class="apropos"><h3>A propos</h3>
+            	<li><a href=""><h2 class="customized">Fonctionnement du site</h2></a></li>
+            	<li><a href="" ><h2 class="customized">Conditions générales de ventes</h2></a></li>
+            	<li><a href="" ><h2 class="customized">Données et confidentialités</h2></a></li>
+        	</ul>
+        	<ul class="noshebergements"><h3>Nos hébergements</h3>
+            	<li><a href=""><h2 class="customized">Charte qualité</h2></a></li>
+            	<li><a href=""><h2 class="customized">Soumettre votre hôtel</h2></a></li>
+        	</ul>
+        	<ul class="assistance"><h3>Assistance</h3>
+            	<li class=><a href=""><h2 class="customized">Centre d'aide</h2></a></li>
+            	<li><a href=""><h2 class="customized">Nous contacter</h2></a></li>
+        	</ul></p>
+    	</footer>
+    
+     
+    </body>
+   
 
             <!--
 

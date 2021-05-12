@@ -1,0 +1,205 @@
+h1
+{	font-weight:bold;
+	font-size:1.0em;
+}
+
+
+a
+{text-decoration-line:none;}
+
+a:hover
+{	border-top:2px solid rgb(0,101,252);
+	padding-top:15%;border-top-width:100%;
+	padding-left:7%;padding-right:5%;
+}
+
+a:visited
+{
+	color:purple;
+}
+
+h2,nav
+{
+	font-size:0.7em;
+}
+
+form
+{	font-weight:bold;
+	font-size:0.9em;
+}
+
+
+.buttonfilter:hover{background-color:#DEEBFF;}
+
+.nbLogt
+{font-size:0.6em;}
+
+body {
+  display: flex;
+  width: 93%;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  top-margin:0%;
+}
+
+
+header /*container of top-header and bottom-header*/ 
+{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/*Top header style*/
+	.top-header {
+	  display: flex;
+	  flex-direction: row;
+	  width: 100%;
+	  justify-content: space-between;
+	}
+
+	#logo {
+	  width: 20%; /*border: 1px bLue solid*/
+	  max-width:100%;
+	}
+	
+
+	nav 
+	{	
+		display:flex;
+		justify-content:flex-end;
+		width: 26.5%;
+	}
+
+	ul /*container of the 3 links*/ 
+	{
+	  	list-style-type: none;
+	  	display: flex;
+	  	justify-content: space-between;  
+	  	width:100%;	
+	  	text-align:center;
+	}
+
+
+/*Bottom header style*/
+	.bottom-header {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  width:55%;
+	}
+
+	.searchbox {
+	  display: flex;
+	  /*border:2px solid black;*/
+	  width: 55%;
+	  height: 3.6%;
+	  border-collapse: collapse;
+	  background-color: #f2f2f2;
+	  border-radius: 7px 0 0 7px;
+	  align-items:center;
+	}
+
+	.map_marker {
+	  display: flex;
+	  padding: 0.6%;
+	  background-color: #f2f2f2;
+	  flex: 0.7;
+	  align-self: center;
+	  justify-content: center;
+	  max-width:100%;
+	  border-radius: 7px 0 0 7px;
+	  margin-left:0.1%;
+	  margin-right:0.1%;
+
+	}
+
+	#lieu {
+	  border: 1px solid #f2f2f2;
+	  height: 3.6%;
+	  flex: 7;
+	  color: black;
+	  background-color: white black;
+	}
+
+	#search 
+	{
+	  background-color: rgb(0, 101, 252);
+	  color: white;
+	  flex: 3;
+	  border-radius: 0 7px 7px 0; 
+	  border:none;/*percentage gives a really different shape*/
+	}
+
+
+/*Filters Style*/
+		form
+		{
+			display:flex;
+			justify-content: space-between;
+			align-items:center;
+			box-sizing:content-box;
+			width:100%;
+		}
+		.buttonfilter
+			{ 
+			  display:flex;
+			  justify-content:space-between;
+			  align-items:center;
+			  border: 2px solid #f2f2f2;
+			  border-radius:25px;
+			  background-color: white;
+			  cursor: pointer;
+			  font-family: Raleway, sans-serif;
+			  font-weight:bold;
+			  max-width:100%;
+			  padding:0;
+			  width:auto;
+			}
+		.fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave
+			{	  		 
+			  background-color: #DEEBFF;
+			  color:rgb(0, 101, 252);
+			  max-width:100%;
+			  border-radius:50%;
+			  padding:10%;
+			}
+
+		
+		.pet_marker{ margin:0; }	
+
+/*nombres de logements*/
+.nbLogt
+		{	
+			display:flex;
+			width:100%; 
+			justify-content:flex-start;
+			align-items:center;
+		}
+
+.info_marker
+	{ 
+		border: 1px solid #f2f2f2;
+		color:rgb(0, 101, 252);
+		max-width:100%;
+		border-radius: 50%;
+		padding:0.8% 1.3%;
+		margin-right:2%;
+	}
+}
+}
+/*
+#section1 
+{
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+#section2 
+{
+  width: 100%;
+}
+*/
