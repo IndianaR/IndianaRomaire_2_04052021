@@ -1,0 +1,663 @@
+
+body 
+{
+  display: flex;
+  width: 100%;
+  height:100%;
+  flex-direction: column;
+  justify-content:space-between;
+  font-family: Raleway, sans-serif;
+  margin:0;
+}
+
+/* the head titles*/
+h1
+{	font-weight:bold;
+	font-size:1.0em;
+	margin-bottom: 0;
+	margin-top:0;
+}
+h2 /*used in footer*/
+{
+	font-size:0.7em;
+	font-weight:bold;
+	margin:0;
+}
+footer h2{margin-bottom:5%;}
+h3
+{
+	font-size:0.6em;
+	margin:0;
+	margin-top:1%;
+	font-weight: normal;
+}
+h4  
+{	font-weight:bold;
+	font-size:0.8em;
+	margin:0;
+}
+
+
+
+a
+{text-decoration-line:none;}
+a:visited{color:black;}
+
+nav a:hover
+{	
+	border-top:2px solid rgb(0,101,252);
+	padding-top:1.5em;
+	padding-left:7%;padding-right:5%;
+}
+
+
+
+/*Header part*/
+nav
+{
+	font-size:0.6em;
+	margin:0;
+	margin-top:1%;
+	font-weight: normal;
+}
+
+form
+{	font-weight:bold;
+	font-size:0.9em;
+}
+
+
+.buttonfilter:hover{background-color:#DEEBFF;}
+
+.nbLogt
+{font-size:0.6em;}
+
+
+
+header /*container of top-header and bottom-header*/ 
+{
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  margin-left: 3.5%;
+  margin-right: 3.5%; 
+}
+
+/*Top header style*/
+	.top-header {
+	  display: flex;
+	  flex-direction: row;
+	  width: 100%;
+	  height:30%;
+	  justify-content: space-between;
+	}
+
+	#logo {
+	  width: 20%; /*border: 1px bLue solid*/
+	  max-width:100%;
+	  margin-left:0;
+	  margin-bottom:10%;
+	}
+	
+
+	nav 
+	{	
+		display:flex;
+		justify-content:flex-end;
+		width: 26.5%;
+
+	}
+
+	ul /*container of the 3 links*/ 
+	{
+	  	list-style-type: none;
+	  	display: flex;
+	  	justify-content: space-between;  
+	  	width:100%;	
+	  	text-align:center;
+	}
+
+
+/*Bottom header style*/
+	.bottom-header {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  width:55%;
+	  height:70%;
+	}
+
+	.searchbox {
+	  display: flex;
+	  width: 55%;
+	  height: 100%;
+	  border-collapse: collapse;
+	  background-color: #f2f2f2;
+	  border-radius: 7px 0 0 7px;
+	  align-items:center;
+	  margin:0;
+	}
+
+	.map_marker {
+	  display: flex;
+	  padding: 1.4%;
+	  background-color: #f2f2f2;
+	  flex: 0.7;
+	  align-items: center;
+	  justify-content: center;
+	  max-width:100%;
+	  border-radius: 7px 0 0 7px;
+	  margin-left:0.1%;
+	  margin-right:0.1%;
+	  height:100%;
+	  box-sizing:border-box;
+
+	}
+
+	#lieu {
+	  border: 1px solid #f2f2f2;
+	  flex: 7;
+	  color: black;
+	}
+
+	#search 
+	{
+	  background-color: rgb(0, 101, 252);
+	  color: white;
+	  flex: 3;
+	  border-radius: 0 7px 7px 0; 
+	  border:none;/*percentage gives a really different shape*/
+	}
+
+
+/*Filters Style*/
+		form
+		{
+			display:flex;
+			justify-content: space-between;
+			align-items:center;
+			box-sizing:content-box;
+			width:100%;
+			margin-top:2%;
+		}
+		.buttonfilter
+			{ 
+			  display:flex;
+			  justify-content:space-between;
+			  align-items:center;
+			  border: 2px solid #f2f2f2;
+			  border-radius:25px;
+			  background-color: white;
+			  cursor: pointer;
+			  font-family: Raleway, sans-serif;
+			  font-weight:bold;
+			  max-width:100%;
+			  padding-left:0;
+			  padding-right:2%;
+			  width:auto;
+			}
+		.fa-dog,.fa-child,.fa-heart,.fa-money-bill-wave
+			{	  		 
+			  background-color: #DEEBFF;
+			  color:rgb(0, 101, 252);
+			  border-radius:100%;
+			  padding:45%;
+			}
+		
+		.fas{margin:-1px;}
+	    .filter_names  
+		{	font-weight:bold;
+			font-size:0.8em;
+			margin:0;
+			margin-left:14px;
+		}
+			
+
+/*nombres de logements*/
+.nbLogt
+		{	
+			display:flex;
+			width:100%; 
+			justify-content:flex-start;
+			align-items:center;
+		}
+
+.info_marker
+	{ 
+		border: 1px solid #f2f2f2;
+		color:rgb(0, 101, 252);
+		max-width:100%;
+		border-radius: 50%;
+		padding:0.8% 1.3%;
+		margin-right:2%;
+	}
+
+/********************************************
+*****************************
+Section 1 part : hébergements and aside*/
+
+#section1
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:93%;
+	height:45%;
+	margin-left: 3.5%;margin-right: 3.5%;
+	box-sizing:content-box;
+}
+
+
+
+	#subsection1
+	{	
+		display:flex;
+		flex-direction:column;
+		background-color:#F2F2F2;
+		width:65%;
+		height:100%;
+		margin-right:1%;
+		padding-left:3%;padding-right:3%;
+		border-radius:10px;
+		flex-wrap:wrap;
+		box-sizing:content-box;
+
+	}
+
+
+																						/*les photos hotels*/
+	.firstbox
+	{
+		width:100%;
+		height:12%;
+		margin-top:3%;
+	}
+
+	.bigbox
+	{
+		display:flex;
+		justify-content:normal;
+		align-content:flex-start;
+		flex-wrap:wrap;
+		height:73%;
+		gap:2em;
+	}
+
+
+
+		#box1,#box2,#box3,#box4,#box5,#box6
+		{
+			display:flex;
+			flex-direction:column;
+			justify-content:space-around;
+			width:28%;
+			height:40%;
+			border-radius:10px;
+			background-color:white;
+			box-sizing:border-box;
+			box-shadow: 0px 0px 10px lightgrey;
+		}
+
+		img
+		{
+			max-width:100%;
+			height:57.5%;
+			border-radius:10px 10px 0 0;
+			object-fit: cover;
+			margin:2%;
+		}
+
+
+		.carac_hotel
+		{	display:flex;
+			flex-direction:column;
+			justify-content: space-evenly;
+			margin-left: 6%;
+			height:20%;
+			margin-top:2%;
+		}
+
+		em
+		{
+			font-weight:bold;
+			font-style: normal;
+		}
+
+		p
+		{
+			font-size:0.6em;
+			margin:0;
+			margin-top: 2%
+		}
+		.star_icon
+		{	
+			width:30%;
+			display:flex;
+			justify-content: space-between;
+			margin-left:6%;
+			margin-bottom: 2.5%;
+			margin-top:2%;
+		}
+
+		.fa-star
+		{	  		 
+			color:rgb(0, 101, 252);
+			max-width:1%;
+			box-sizing: border-box;
+			font-size:0.5em;
+		}
+
+		.grey-star
+		{	  		 
+			color:#F2F2F2;
+		}
+
+	aside
+	{	
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items:center;
+		background-color:#F2F2F2;
+		width: 31%;
+		height:100%;
+		margin-left:1.5%;
+		padding-left:3%;padding-right:3%;
+		border-radius:10px;
+		box-sizing:content-box;
+	}
+
+	#asidebox1
+	{
+		width:100%;
+		height:6%;
+		display: flex;
+		justify-content:space-between;
+		margin-top:6%;
+	}
+
+
+	#asidebox2
+	{
+		display:flex;
+		flex-direction:column;
+		justify-content: space-evenly;
+		width:100%;
+		height:88%;
+	}
+
+	.populaire
+	{
+		display:flex;
+		flex-direction: row;
+		width:100%;
+		height:27%;
+		border-radius:10px;
+		background-color:white;
+		box-sizing:border-box;
+		box-shadow: 0px 0px 10px lightgrey;
+	}
+	.carac_hotel2
+	{	
+		display:flex;
+		flex-direction:column;
+		height:79%;
+		justify-content:space-between;
+		padding-left:3%;
+		padding-top:5%;
+		padding-bottom:2%;
+		padding-right:20%;
+	}
+	.carac_hotel2 p,.carac_hotel3 p
+		{
+			margin-bottom:15%;
+
+		}
+	
+	.carac_hotel2 .star_icon,.carac_hotel3 .star_icon
+	{
+		margin-left:0;
+		width:40%;
+	}
+	.carac_hotel3
+	{
+		display:flex;
+		flex-direction:column;
+		height:79%;
+		justify-content:space-between;
+		padding-left:3%;
+		padding-top:5%;
+		padding-bottom:2%;
+		padding-right:15%;
+	}
+
+	.populaire img
+	{
+		max-width:38%;
+		height:90%;
+		border-radius:10px 0 0 10px;
+		object-fit: cover;
+		margin:2%;
+	}
+
+
+	.prix
+	{
+		font-weight:bold;
+	}
+
+/*******************************
+***********************************
+Section 2   Activités
+
+*/
+
+#section2
+{
+	display: flex;
+    flex-direction: column;
+    width:93%;
+    height:40%;
+	margin-left: 3.5%;
+	box-sizing:border-box;
+	margin-top:3%;
+	padding-bottom: 20%;
+	gap:1em;
+}
+		
+		.firstbox2
+		{	
+			width:100%;
+			height:10%;
+		}
+		.bigbox2
+		{
+			display: flex;
+			justify-content: space-between;
+			height:80%;
+			gap:1em;
+		}
+			
+
+			#vieux_port
+			{
+				display:flex;
+				flex-direction:column;
+				width:23%;
+				box-shadow: 0px 0px 10px lightgrey;
+				margin:0;
+				border-radius:10px;
+				height:300px;
+			}
+
+			.box2_2,.box2_4
+			{
+				width:23%;
+				margin:0;
+				height:300px;
+			
+			}
+			#pomegues,#frioul,#longchamps
+			{
+				display:flex;
+				flex-direction:column;
+				margin:0;
+				box-shadow: 0px 0px 10px lightgrey;
+				border-radius:10px;
+			}
+			#frioul		{height:113px;}
+			#pomegues {height:168px;}
+			#longchamps{height:145px;
+						}
+			.box2_2
+			{
+				width:23%;
+				display:flex;
+				flex-direction: column;
+				justify-content:normal;
+				gap:1.5em;
+				height:300px;
+			}
+
+			#calanques
+			{
+				display:flex;
+				flex-direction:column;
+				width:23%;
+				border-radius:10px;
+				box-shadow: 0px 0px 10px lightgrey;
+				margin:0;
+				height:300px;
+				
+			}
+			#notre_dame
+			{
+				margin:0;
+				box-shadow: 0px 0px 10px lightgrey;
+				border-radius:10px;
+				height:46.6%;
+			}
+			
+			.box2_4
+			{
+				display:flex;
+				flex-direction: column;
+				justify-content:normal;
+				gap:1em;
+				width:23%;
+				height:300px;
+			}
+			#vieux_port img,#calanques img,#pomegues img,#frioul img,#notre_dame img,#longchamps img
+			{		
+				width:100%;
+				height:75%; 
+				margin:0;
+				border-radius:10px 10px 0 0;
+				object-fit: cover;				
+			}
+
+			#vieux_port img {height:257px;}
+			#calanques img {height:257px;}
+			#pomegues img {height:125px;}
+			#frioul img{height:69px;}
+			#notre_dame img{height:100px;}
+			#longchamps img{height:101px;}
+			/* Figure caption */
+
+
+			figcaption
+			{
+				font-size:0.7em;
+				font-weight:bold;  
+				box-sizing:border-box;   
+			}
+				#vieux_port figcaption
+				{
+					min-height:33px;
+					font-size:0.7em;
+					font-weight:bold;
+					margin-left:5%;
+					margin-bottom:2%;
+					box-sizing:border-box;
+					padding-top:6%;
+				}
+				#pomegues figcaption
+				{min-height:33px;
+				font-size:0.7em;
+				font-weight:bold;
+				margin-left:5%;
+				margin-bottom:2%;
+				padding-top:6%;
+				box-sizing:border-box;}
+				#frioul figcaption
+				{min-height:33px;
+				font-size:0.7em;
+				font-weight:bold;
+				margin-left:5%;
+				margin-bottom:2%;
+				padding-top:6%;
+				box-sizing:border-box;}
+				#calanques figcaption
+				{min-height:33px;
+				font-size:0.7em;
+				font-weight:bold;
+				margin-left:5%;
+				margin-bottom:2%;
+				padding-top:6%;
+				box-sizing:border-box;
+				padding-top:6%;}
+				#notre_dame figcaption
+				{min-height:33px;
+				font-size:0.7em;
+				font-weight:bold;
+				margin-left:5%;
+				margin-bottom:6%;
+				padding-top:3%;
+				box-sizing:border-box;}
+				#longchamps figcaption
+				{min-height:33px;
+				font-size:0.7em;
+				font-weight:bold;
+				margin-left:5%;
+				margin-bottom:6%;
+				padding-top:6%;
+				box-sizing:border-box;}
+
+/*******************************
+***********************************
+Footer
+
+*/
+
+footer
+{
+	display:flex;
+	flex-direction: row;
+	font-family: Raleway, sans-serif;
+  	width:100%;
+  	height:13%;
+  	background-color:#F2F2F2;
+  	padding-top:3%;
+  	padding-bottom:3%;
+}
+
+
+.apropos,.noshebergements,.assistance
+{
+	display:flex;
+	flex-direction: column;
+	margin:0;
+	justify-content:flex-start;
+	padding-left:0;
+	align-items:flex-start;
+	margin-left: 3.5%;
+}
+
+.customized
+{
+	color:black;
+	margin-top: 5%;
+	margin-bottom:5%;
+	padding-top: 3%;
+}
+
