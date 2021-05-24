@@ -1,0 +1,37 @@
+@media screen and (max-width:500px)
+{
+
+	#section1
+	{
+		flex-direction: column;
+		width:100%;
+		margin:0;
+	}
+
+	aside{order:1;
+		width:100%;}
+	#subsection1
+	{
+		order:2;
+		width:100%;
+		background-color: white;
+	}
+
+.bigbox{flex-direction: column;}
+#box1,#box2,#box3,#box4,#box5,#box6{width:100%;}
+.bigbox2{flex-direction: column;
+		width:100%;}
+
+.bigbox2 *,#vieux_port,#calanques{width:100%;}
+
+
+
+	footer
+	{
+		flex-direction: column;
+		gap:2rem;
+	}
+	.customized{margin-bottom: 0;}
+
+
+}
