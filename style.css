@@ -1,9 +1,9 @@
 
+html {margin:0;}
 body 
 {
   display: flex;
   width: 100%;
-  height:100%;
   flex-direction: column;
   justify-content:space-between;
   font-family: Raleway, sans-serif;
@@ -17,13 +17,16 @@ h1
 	margin-bottom: 0;
 	margin-top:0;
 }
-h2 /*used in footer*/
+.hotel_names /*used in footer*/
 {
 	font-size:0.7em;
 	font-weight:bold;
 	margin:0;
 }
-footer h2{margin-bottom:5%;}
+h2{
+	font-size:0.7em;
+	font-weight:bold;
+	margin:0;margin-bottom:5%;}
 h3
 {
 	font-size:0.6em;
@@ -35,6 +38,7 @@ h4
 {	font-weight:bold;
 	font-size:0.8em;
 	margin:0;
+	padding-bottom: 1rem;
 }
 
 
@@ -46,7 +50,7 @@ a:visited{color:black;}
 nav a:hover
 {	
 	border-top:2px solid rgb(0,101,252);
-	padding-top:1.5em;
+	padding-top:1.7rem;
 	padding-left:7%;padding-right:5%;
 }
 
@@ -57,7 +61,7 @@ nav
 {
 	font-size:0.6em;
 	margin:0;
-	margin-top:1%;
+	margin-top:1.2rem;
 	font-weight: normal;
 }
 
@@ -87,17 +91,15 @@ header /*container of top-header and bottom-header*/
 	.top-header {
 	  display: flex;
 	  flex-direction: row;
-	  width: 100%;
-	  height:30%;
 	  justify-content: space-between;
 	}
 
 	#logo {
-	  width: 20%; /*border: 1px bLue solid*/
-	  max-width:100%;
-	  margin-left:0;
-	  margin-bottom:10%;
-	}
+
+		width:30%;
+	  	margin-left:0;margin-top: 0;margin-bottom: 0;
+		object-fit: contain;
+		}
 	
 
 	nav 
@@ -124,7 +126,6 @@ header /*container of top-header and bottom-header*/
 	  flex-direction: column;
 	  flex-wrap: nowrap;
 	  width:55%;
-	  height:70%;
 	}
 
 	.searchbox {
@@ -239,12 +240,8 @@ Section 1 part : hébergements and aside*/
 #section1
 {
 	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	width:93%;
-	height:45%;
 	margin-left: 3.5%;margin-right: 3.5%;
-	box-sizing:content-box;
+	box-sizing:border-box;
 }
 
 
@@ -254,13 +251,12 @@ Section 1 part : hébergements and aside*/
 		display:flex;
 		flex-direction:column;
 		background-color:#F2F2F2;
-		width:65%;
-		height:100%;
 		margin-right:1%;
 		padding-left:3%;padding-right:3%;
 		border-radius:10px;
 		flex-wrap:wrap;
-		box-sizing:content-box;
+		box-sizing:border-box;
+		gap:1rem;
 
 	}
 
@@ -268,8 +264,6 @@ Section 1 part : hébergements and aside*/
 																						/*les photos hotels*/
 	.firstbox
 	{
-		width:100%;
-		height:12%;
 		margin-top:3%;
 	}
 
@@ -277,10 +271,8 @@ Section 1 part : hébergements and aside*/
 	{
 		display:flex;
 		justify-content:normal;
-		align-content:flex-start;
 		flex-wrap:wrap;
-		height:73%;
-		gap:2em;
+		gap:1rem;
 	}
 
 
@@ -290,8 +282,7 @@ Section 1 part : hébergements and aside*/
 			display:flex;
 			flex-direction:column;
 			justify-content:space-around;
-			width:28%;
-			height:40%;
+			width:31%;
 			border-radius:10px;
 			background-color:white;
 			box-sizing:border-box;
@@ -301,10 +292,11 @@ Section 1 part : hébergements and aside*/
 		img
 		{
 			max-width:100%;
-			height:57.5%;
+			height:7rem;
 			border-radius:10px 10px 0 0;
 			object-fit: cover;
 			margin:2%;
+
 		}
 
 
@@ -327,7 +319,6 @@ Section 1 part : hébergements and aside*/
 		{
 			font-size:0.6em;
 			margin:0;
-			margin-top: 2%
 		}
 		.star_icon
 		{	
@@ -357,22 +348,21 @@ Section 1 part : hébergements and aside*/
 		display:flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items:center;
+		align-self: flex-start;
+		width:45%;
 		background-color:#F2F2F2;
-		width: 31%;
-		height:100%;
 		margin-left:1.5%;
-		padding-left:3%;padding-right:3%;
+		padding-left:3%;padding-right:3%;padding-bottom:1rem;padding-top:0.5%;
 		border-radius:10px;
-		box-sizing:content-box;
+		box-sizing:border-box;
+		gap:1rem;
 	}
 
 	#asidebox1
 	{
-		width:100%;
-		height:6%;
 		display: flex;
 		justify-content:space-between;
+		align-items: center;
 		margin-top:6%;
 	}
 
@@ -382,16 +372,14 @@ Section 1 part : hébergements and aside*/
 		display:flex;
 		flex-direction:column;
 		justify-content: space-evenly;
-		width:100%;
-		height:88%;
+		gap:1rem;
+
 	}
 
 	.populaire
 	{
 		display:flex;
 		flex-direction: row;
-		width:100%;
-		height:27%;
 		border-radius:10px;
 		background-color:white;
 		box-sizing:border-box;
@@ -401,43 +389,33 @@ Section 1 part : hébergements and aside*/
 	{	
 		display:flex;
 		flex-direction:column;
-		height:79%;
-		justify-content:space-between;
-		padding-left:3%;
-		padding-top:5%;
-		padding-bottom:2%;
-		padding-right:20%;
-	}
-	.carac_hotel2 p,.carac_hotel3 p
-		{
-			margin-bottom:15%;
-
-		}
-	
-	.carac_hotel2 .star_icon,.carac_hotel3 .star_icon
-	{
-		margin-left:0;
-		width:40%;
-	}
-	.carac_hotel3
-	{
-		display:flex;
-		flex-direction:column;
-		height:79%;
-		justify-content:space-between;
 		padding-left:3%;
 		padding-top:5%;
 		padding-bottom:2%;
 		padding-right:15%;
 	}
+	.populaire .hotel_names{padding-bottom:5%;}
+
+	.carac_hotel2 p,
+		{
+			margin-bottom:6%;
+
+		}
+	
+	.carac_hotel2 .star_icon
+	{
+		margin-left:0;
+		padding-top: 35%;
+		width:40%;
+	}
+
 
 	.populaire img
 	{
-		max-width:38%;
-		height:90%;
+		width:35%;
 		border-radius:10px 0 0 10px;
 		object-fit: cover;
-		margin:2%;
+		margin:0.2rem;
 	}
 
 
@@ -457,12 +435,11 @@ Section 2   Activités
 	display: flex;
     flex-direction: column;
     width:93%;
-    height:40%;
 	margin-left: 3.5%;
 	box-sizing:border-box;
 	margin-top:3%;
-	padding-bottom: 20%;
-	gap:1em;
+	padding-bottom: 2rem;
+	gap:1rem;
 }
 		
 		.firstbox2
