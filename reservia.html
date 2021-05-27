@@ -6,8 +6,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" media="screen and (max-width: 600px)" href="style_max500.css" />
-          <link rel="stylesheet" media="screen and (max-width: 800px)" href="style_max500.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="style_max600.css" />
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="e_max800.cssstyl" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');</style>
         <title>Reservia</title>
@@ -17,12 +17,12 @@
     <body>   	
         <header>
         	<div class=top-header> 
-        		<p><img src="images/logo/Reservia@3x.png" alt="logo" id="logo"/></p>
         		<nav>
             	<ul>
-            		<li><a href="#ancre_hebergement" title="Hébergements">Hébergements</a></li>
+            		<li><img src="images/logo/Reservia@3x.png" alt="logo" id="logo"</li>
+            		<li><a class="nav_blue" href="#ancre_hebergement" title="Hébergements">Hébergements</a></li>
             		<li><a href="#ancre_activités" title="Activités">Activités</a></li>
-            		<li><a href="#ancre_s'inscrire" title="S'inscrire">S'inscrire</a></li>
+            		<li><a class="nav_blue_bold" href="#ancre_s'inscrire" title="S'inscrire">S'inscrire</a></li>
             	</ul>
            		</nav>
            	</div>
@@ -37,6 +37,7 @@
 	          			<span class=map_marker><i class="fas fa-map-marker-alt fa-xs"></i></span>
 	          			<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
 	          			<input type="submit" id="search" value="Rechercher">
+	          			<i id="search_mobile"class="fas fa-search"></i>
 	          		</p>
 	          	</form>
 	          	<form method="post">Filtres  
@@ -99,17 +100,17 @@
 				<div id="asidebox2">
 					<a href="" class="populaire">
 						<img src="images/soleilmatin.jpg" alt="hotel_le_soleil_du_matin"/>
-						<div class="carac_hotel2"><p class="hotel_names">Hôtel Le soleil du matin</p><p>Nuit à partir de <em >128€</em></p>
+						<div class="carac_hotel2"><p class="hotel_names">Hôtel Le soleil du</p><p class="hotel_names">matin</p><p>Nuit à partir de <em >128€</em></p>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
 					</a>
 					<a href="" class="populaire">
 						<img src="images/coeureau.jpg" alt="chambres_hotes"/>
-						<div class="carac_hotel2"><p class="hotel_names">Au coeur de l'eau Chambres d'hôtes</p><p>Nuit à partir de <em >71€</em></p>
+						<div class="carac_hotel2"><p class="hotel_names">Au coeur de l'eau</p><p class="hotel_names">Chambres d'hôtes</p><p>Nuit à partir de <em >71€</em></p>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey-star"></i></div></div>
 					</a>
 					<a href=""  class="populaire">
 						<img src="images/bleublanc.jpg" alt="hotel_tout_bleu"/>
-						<div class="carac_hotel2"><p class="hotel_names">Hôtel Tout bleu et Blanc</p><p>Nuit à partir de <em >68€</em></p>
+						<div class="carac_hotel2"><p class="hotel_names">Hôtel Tout bleu et</p><p class="hotel_names">Blanc</p><p>Nuit à partir de <em >68€</em></p>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey-star"></i></div></div>
 					</a>
 				</div>					 
