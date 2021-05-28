@@ -32,7 +32,7 @@
 	         	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 	          	<h3>En plein centre ville ou en pleine nature</h3> 
 	          			
-	          	<form method="post" >
+	          	<form method="post" id="search_form"> 
 	          		<p class="searchbox">
 	          			<span class=map_marker><i class="fas fa-map-marker-alt fa-xs"></i></span>
 	          			<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
@@ -40,7 +40,8 @@
 	          			<i id="search_mobile"class="fas fa-search"></i>
 	          		</p>
 	          	</form>
-	          	<form method="post">Filtres  
+	          	<form method="post" >
+	          		<p id=filter_txt>Filtres</p> 
 	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></i></span><p class="filter_names">Economique</p></button>
 	          		<button class="buttonfilter" onclick="filterSelection('Familial')"><span class="child_marker"><i class="fas fa-child"></i></span><p class="filter_names">Familial</p></button>	
 		          	<button class="buttonfilter" onclick="filterSelection('Romantique')"><span class="heart_marker"><i class="fas fa-heart"></i></span><p class="filter_names">Romantique</p></button>
