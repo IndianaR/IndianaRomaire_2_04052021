@@ -13,30 +13,40 @@ body
 /* the head titles*/
 h1
 {	font-weight:bold;
-	font-size:1.0em;
+	font-size:1.3rem;
 	margin-bottom: 0;
 	margin-top:0;
 }
 
-h2{
-	font-size:0.7em;
-	font-weight:bold;
-	margin:0;margin-bottom:8%;}
 h3
 {
-	font-size:0.6em;
+	font-size:0.7em;
 	margin:0;
 	margin-top:1%;
 	font-weight: normal;
 }
 h4  
 {	font-weight:bold;
-	font-size:0.8em;
+	font-size:0.9em;
 	margin:0;
 	padding-bottom: 1rem;
 }
 
+.footer_heads
+{
+	font-size:1em;
+	font-weight:bold;
+	margin:0;
+	margin-bottom:8%;
+}
 
+.titres_section
+{	
+	font-weight:bold;
+	font-size:1.3rem;
+	margin-bottom: 0;
+	margin-top:0;
+}
 
 a
 {text-decoration-line:none;
@@ -55,7 +65,7 @@ nav a:hover
 /*Header part*/
 nav
 {
-	font-size:0.6em;
+	font-size:0.7em;
 	margin:0;
 	margin-top:1.2rem;
 	font-weight: normal;
@@ -71,10 +81,6 @@ form
 
 
 .buttonfilter:hover{background-color:#DEEBFF;}
-
-
-.nbLogt
-{font-size:0.6em;}
 
 
 
@@ -223,8 +229,9 @@ header /*container of top-header and bottom-header*/
 		}
 					
 		.fas{margin:-1px;}
-	    .filter_names  
-		{	font-weight:bold;
+	  .filter_names  
+		{	
+			font-weight:bold;
 			font-size:0.8em;
 			margin:0;
 			margin-left:14px;
@@ -240,6 +247,7 @@ header /*container of top-header and bottom-header*/
 			align-items:center;
 			padding-top:1.5%;
 			padding-bottom:1.5%;
+			font-size:0.7em;
 		}
 
 .info_marker
@@ -295,10 +303,11 @@ Section 1 part : hébergements and aside*/
 
 		.hotel_names 
 		{
-			font-size:0.7em;
+			font-size:0.8em;
 			font-weight:bold;
 			margin:0;
 		}
+		.bigbox .hotel_names{margin-bottom: 0.2rem}
 
 		#box1,#box2,#box3,#box4,#box5,#box6
 		{
@@ -419,11 +428,6 @@ Section 1 part : hébergements and aside*/
 	}
 	.populaire .hotel_names{padding-bottom:5%;}
 
-	.carac_hotel2 p,
-		{
-			margin-bottom:6%;
-
-		}
 	
 	.carac_hotel2 .star_icon
 	{
@@ -551,50 +555,50 @@ Section 2   Activités
 		
 			/* Figure caption */
 
-
-			figcaption
+			.figcaption
 			{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;  
 				box-sizing:border-box;   
 				margin-top:auto;
 				margin-bottom:auto;
 			}
-				#vieux_port figcaption
+			
+				#vieux_port .figcaption
 				{
 					
 					font-weight:bold;
 					margin-left:5%;
 					margin-right:2%;
 				}
-				#pomegues figcaption
+				#pomegues .figcaption
 				{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;
 				margin-left:5%;
 				}
-				#frioul figcaption
+				#frioul .figcaption
 				{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;
 				margin-left:5%;
 				}
-				#calanques figcaption
+				#calanques .figcaption
 				{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;
 				margin-left:5%;
 				}
-				#notre_dame figcaption
+				#notre_dame .figcaption
 				{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;
 				margin-left:5%;
 				margin-top:3%;
 				}
-				#longchamps figcaption
+				#longchamps .figcaption
 				{
-				font-size:0.7em;
+				font-size:0.8em;
 				font-weight:bold;
 				margin-left:5%;
 				}
@@ -628,6 +632,8 @@ footer
 	padding-left:0;
 	align-items:flex-start;
 	margin-left: 3.5%;
+	font-size:0.9em;
+	font-weight:bold;
 }
 
 .customized
@@ -636,5 +642,6 @@ footer
 	margin-top: 5%;
 	margin-bottom:5%;
 	padding-top: 3%;
+	font-size: 0.8em;
 }
 

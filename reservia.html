@@ -1,7 +1,7 @@
 
 <!-- icons downloaded from fontawesome.com-->
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
         	<div class=top-header> 
         		<nav>
             	<ul>
-            		<li><img src="images/Reservia@3x.png" alt="logo" id="logo"</li>
+            		<li><img src="images/Reservia@3x.png" alt="logo" id="logo"></li>
             		<li><a class="nav_blue" href="#ancre_hebergement" title="Hébergements">Hébergements</a></li>
             		<li><a href="#ancre_activités" title="Activités">Activités</a></li>
             		<li><a class="nav_blue_bold" href="#ancre_s'inscrire" title="S'inscrire">S'inscrire</a></li>
@@ -37,15 +37,15 @@
 	          			<span class=map_marker><i class="fas fa-map-marker-alt fa-xs"></i></span>
 	          			<input type="search" name="lieu" id="lieu" placeholder="Marseille, France"/>
 	          			<input type="submit" id="search" value="Rechercher">
-	          			<i id="search_mobile"class="fas fa-search"></i>
+	          			<i id="search_mobile" class="fas fa-search"></i>
 	          		</p>
 	          	</form>
 	          	<form method="post" >
 	          		<p id=filter_txt>Filtres</p> 
-	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></i></span><p class="filter_names">Economique</p></button>
-	          		<button class="buttonfilter" onclick="filterSelection('Familial')"><span class="child_marker"><i class="fas fa-child"></i></span><p class="filter_names">Familial</p></button>	
-		          	<button class="buttonfilter" onclick="filterSelection('Romantique')"><span class="heart_marker"><i class="fas fa-heart"></i></span><p class="filter_names">Romantique</p></button>
-		          	<button class="buttonfilter" onclick="filterSelection('Animaux autorisés')"><span class="pet_marker"><i class="fas fa-dog"></i></span><p class="filter_names">Animaux autorisés</p></button>
+	          		<button class="buttonfilter" onclick="filterSelection('Economique')"> <span class="money_marker"><i class="fas fa-money-bill-wave"></i></span><span class="filter_names">Economique</span></button>
+	          		<button class="buttonfilter" onclick="filterSelection('Familial')"><span class="child_marker"><i class="fas fa-child"></i></span><span class="filter_names">Familial</span></button>	
+		          	<button class="buttonfilter" onclick="filterSelection('Romantique')"><span class="heart_marker"><i class="fas fa-heart"></i></span><span class="filter_names">Romantique</span></button>
+		          	<button class="buttonfilter" onclick="filterSelection('Animaux autorisés')"><span class="pet_marker"><i class="fas fa-dog"></i></span><span class="filter_names">Animaux autorisés</span></button>
 				</form>
 				<p class="nbLogt"><span class=info_marker><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
           	</div>
@@ -54,7 +54,8 @@
         <section id="section1">
 
         	<div id="subsection1">
-        	    <div class="firstbox"><h1 id="ancre_herbergement">Hébergements à Marseille</h1>
+        	    <div class="firstbox">
+        	    	<h2 class="titres_section" id="ancre_herbergement">Hébergements à Marseille</h2>
         	    </div>
 
 				<div class="bigbox">
@@ -69,12 +70,12 @@
 						<div class="carac_hotel"><p class="hotel_names">Hôtel du port</p><p>Nuit à partir de <em >52€</em></p></div>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
 					</a>
-	        	    <a href=""id="box3">
+	        	    <a href="" id="box3">
 						<img src="images/mouettes.jpg" alt="hotel_les_mouettes"/>
 						<div class="carac_hotel"><p class="hotel_names">Hôtel Les mouettes</p><p>Nuit à partir de <em>76€</em></p></div>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey-star"></i></div>
 					</a>
-	        	    <a href=""id="box4">
+	        	    <a href="" id="box4">
 						<img src="images/lamer.jpg" alt="hotel_de_la_mer"/>
 						<div class="carac_hotel"><p class="hotel_names">Hôtel de la mer</p><p>Nuit à partir de <em>46€</em></p></div>
 						<div class="star_icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star grey-star"></i><i class="fas fa-star grey-star"></i></div>
@@ -95,7 +96,7 @@
 
             <aside>
             	<div id="asidebox1">
-            		<h1>Les plus populaires</h1>
+            		<h2 class="titres_section">Les plus populaires</h2>
             		<i class="fas fa-chart-line"></i>
             	</div>					
 				<div id="asidebox2">
@@ -116,60 +117,60 @@
 					</a>
 				</div>					 
             </aside>
-
-
         </section>
           		
         <section id="section2">
-        	<div class="firstbox2"> <h1 id="ancre_activités">Activités à Marseille</h1>
+        	<div class="firstbox2">
+        		<h2 class="titres_section" id="ancre_activités">Activités à Marseille</h2>
         	</div>
         	<div class="bigbox2">
         		<a href="" id="vieux_port">
         			<img src="images/vieux_port.jpg" alt="Vieux_Port"/>
-					<figcaption>Vieux Port</figcaption>
+					<span class="figcaption">Vieux Port</span>
         		</a>
         		<div class="box2_2">
         			<a href="" id="pomegues">
-        			<img src="images/pomegues.jpg" alt="Fort_de_Pomegues"/>
-					<figcaption>Fort de Pomègues</figcaption>
+        				<img src="images/pomegues.jpg" alt="Fort_de_Pomegues"/>
+						<span class="figcaption">Fort de Pomègues</span>
 					</a>
 					<a href="" id="frioul">	
-					<img src="images/iles_frioul.jpg" alt="Iles_du_Frioul"/>
-					<figcaption>Iles du Frioul</figcaption>
+						<img src="images/iles_frioul.jpg" alt="Iles_du_Frioul"/>
+						<span class="figcaption">Iles du Frioul</span>
         			</a>
         		</div>
         		<a href="" id="calanques">
         			<img src="images/calanques.jpg" alt="Parc_National_des_Calanques"/>
-					<figcaption>Parc National des Calanques</figcaption>
+					<span class="figcaption">Parc National des Calanques</span>
         		</a>
         		<div class="box2_4">
 	        		<a href="" id="notre_dame">
 	        			<img src="images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde"/>
-						<figcaption>Notre-Dame-de-la-Garde</figcaption>
+						<span class="figcaption">Notre-Dame-de-la-Garde</span>
 					</a>
 					<a href="" id="longchamps">
 						<img src="images/parc_longchamp.jpg" alt="Parc_Longchamp"/>
-						<figcaption>Parc Longchamp</figcaption>
+						<span class="figcaption">Parc Longchamp</span>
 	        		</a>
 	        	</div>
-        	</div>	
-        	
-           
+        	</div>	     
 
         </section>
 
     	<footer>
     		
-	       		<ul class="apropos"><h2>A propos</h2>
-	            	<li><a href=""><h3 class="customized">Fonctionnement du site</h3></a></li>
+	       		<ul class="apropos">
+	       			<li class="footer_heads">A propos</li>
+	       			<li><a href=""><h3 class="customized">Fonctionnement du site</h3></a></li>
 	            	<li><a href="" ><h3 class="customized">Conditions générales de ventes</h3></a></li>
 	            	<li><a href="" ><h3 class="customized">Données et confidentialités</h3></a></li>
 	        	</ul>
-	        	<ul class="noshebergements"><h2>Nos hébergements</h2>
+	        	<ul class="noshebergements">
+	        		<li class="footer_heads">Nos hébergements</li>
 	            	<li><a href=""><h3 class="customized">Charte qualité</h3></a></li>
 	            	<li><a href=""><h3 class="customized">Soumettre votre hôtel</h3></a></li>
 	        	</ul>
-	        	<ul class="assistance"><h2>Assistance</h2>
+	        	<ul class="assistance">
+	        		<li class="footer_heads">Assistance</li>
 	            	<li><a href=""><h3 class="customized">Centre d'aide</h3></a></li>
 	            	<li><a href=""><h3 class="customized">Nous contacter</h3></a></li>
 	        	</ul>

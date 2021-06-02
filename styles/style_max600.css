@@ -4,9 +4,10 @@
 /*head titles*/
 
 	h1{font-size:1.5em;}
-	h2{font-size:1em;margin-bottom:2%}
 	h3{font-size:0.9em;}
 	h4{font-size:0.9em;}
+
+	.titres_section{font-size:1.5em;}
 
 /*Top header*/
 
@@ -33,11 +34,11 @@
 		{
 			order:3;
 			margin-top:1em;
-			font-size:1.5em;
+			font-size:1.4em;
 			margin-left:-1em;
-			padding-left:14%;
+			padding-left:13%;
 			padding-bottom:3%;
-			padding-right:14%;
+			padding-right:13%;
 			border-bottom:3px solid rgb(0, 101, 252);
 			box-sizing: border-box;
 		}
@@ -45,11 +46,11 @@
 	nav li:nth-child(3)   /*Activités*/
 		{	
 			order:4;
-			font-size:1.5em;
-			padding-left:22%;
+			font-size:1.4em;
+			padding-left:21%;
 			margin-right:-3em;
 			padding-bottom:3%;
-			padding-right:22%;
+			padding-right:21%;
 			border-bottom:3px solid #F2F2F2;
 			box-sizing: border-box;
 		} 
@@ -61,7 +62,7 @@
 			margin-top:0em;
 			margin-left:3em;
 			margin-right:1em;
-			font-size:1.5em;
+			font-size:1.4em;
 		} 
 	#ancre_activités
 	{
@@ -104,8 +105,8 @@
 		border-radius:13px 0 0 13px;
 		max-width:14%;
 	}
-	.searchbox .fas
-	{font-size:1.3rem;}
+	.searchbox .fas	{font-size:1.3rem;}
+	
 	#lieu
 	{
 		height:100%;
@@ -123,7 +124,7 @@
 		border-radius:30%;
 		height:100%;
 		width:15%;
-		padding:3%;padding-top:3.5%padding-left: 4%;
+		padding:3%;padding-top:3.5%;padding-left: 4%;
 		box-sizing:border-box;
 	}
 
@@ -206,8 +207,8 @@
 		width:100%;
 		height:11em;
 	}
-	#vieux_port figcaption,#pomegues figcaption,#frioul figcaption,
-	#notre_dame figcaption,#longchamps figcaption,#calanques figcaption{font-size:0.9em;}
+	#vieux_port .figcaption,#pomegues .figcaption,#frioul .figcaption,
+	#notre_dame .figcaption,#longchamps .figcaption,#calanques .figcaption{font-size:0.9em;}
 	.box2_2,.box2_4
 	{
 		width:100%;
@@ -230,6 +231,8 @@
 		flex-direction: column;
 		gap:2rem;
 	}
+	.apropos,.noshebergements,.assistance{font-size:1em;margin-bottom:2%;}
+	.footer_heads{margin-bottom: 4%}
 	.customized{margin-bottom: 0;}
 
 
