@@ -1,0 +1,254 @@
+@media screen and (max-width:688px)  /* max 600  smartphone  */
+{
+
+body{
+	align-items: center;
+}
+
+/*head titles*/
+
+	h1{font-size:1.5em;}
+	h3{font-size:0.9em;}
+	h4{font-size:0.9em;}
+
+	.titres_section{font-size:1.5em;}
+
+header{
+	margin: 0;
+}
+/*Top header*/
+
+.top-header{
+	display: block;
+}
+#logo
+	{
+		margin:0;
+		margin-top: 15px;
+	}
+
+
+/*Menu de navigation*/
+	
+	nav ul      
+	{
+
+	  	display: flex;
+	  	justify-content: space-between;  
+	  	padding-left: 0;
+	}
+	nav ul > *{flex-basis: 100%;}
+	li + li {margin-left: 0;}
+
+	nav li{
+		font-size: 1.2rem;
+	}
+	nav li:nth-child(1)
+		{
+
+			border-bottom:3px solid rgb(0, 101, 252);
+			box-sizing: border-box;
+			margin-left: -21px;
+			text-align: center;
+		} 
+		}
+
+	nav li:nth-child(2)   /*Activités*/
+		{	
+			
+			border-bottom:3px solid #F2F2F2;
+			box-sizing: border-box;
+			padding-bottom: 15px;
+			margin-right: -21px;
+			text-align: center;
+		} 
+
+	nav li:nth-child(3)/*s'inscrire*/
+		{
+			position: absolute;
+			top: 40px;
+			right:15px;
+			padding-bottom: 15px;
+		} 
+	top-header a{}
+	#ancre_activités
+	{
+		color:black;
+	}
+	
+
+
+/*Bottom header*/
+
+	.bottom-header h1
+	{
+		padding-top: 5%;
+		padding-bottom:2%;
+	}
+
+	/*Searchbox*/
+	.searchbox
+	{
+		width:100%;
+		height:100%;
+	}
+	#search
+	{display:none;}
+	#search_form
+	{
+		height:3em;
+		width: 100%
+	}
+	.map_marker
+	{
+		height:100%;
+		padding-right:2%;
+		padding-left:2%;
+		border-radius:13px 0 0 13px;
+		max-width:14%;
+	}
+	.searchbox .fas	{font-size:21px;}
+	
+	#lieu
+	{
+		height:100%;
+		max-width:70%;
+		font-size:1rem;
+		font-weight:bold;
+		font-family:raleway, sans-serif;
+		border: 2px solid #f2f2f2;
+		margin-left: -1px;
+	}
+
+	#search_mobile
+	{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		color:white;
+		background-color: rgb(0, 101, 252);
+		border-radius:30%;
+		height:100%;
+		width:48px;
+		box-sizing:border-box;
+		margin-left: -11px;
+	}
+
+
+/*Button filters*/
+	form
+		{
+			flex-wrap:wrap;
+			justify-content:normal;
+			align-self:center;
+			padding-top:6%;
+			width:100%;
+			gap:0.5rem;
+		}
+	#filter_txt
+	{
+		width:100%;
+		font-size:1rem;
+	}
+	.filter_names
+	{
+		font-size:1rem;
+		margin-left:1.1rem;
+		margin-right:0.6rem;
+	}
+	#section1
+	{
+		flex-direction: column;
+		width:100%;
+		margin:0;
+	}
+
+	aside
+	{
+		order:1;
+		width:100%;
+		margin-left:0;
+		border-radius:0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#subsection1
+	{
+		order:2;
+		width:100%;
+		flex-wrap:nowrap;
+		background-color: white;
+	}
+
+
+
+/*section 1*/
+	.bigbox{flex-direction: column;}
+	#box1,#box2,#box3,#box4,#box5,#box6{width:100%;}
+	.star_icon{width:41px;}
+	.bigbox img{margin-bottom: 0;}
+	.bigbox p{padding-top: 1%}
+
+/*aside*/
+
+	.hotel_names{font-size:0.9rem;}
+	p{font-size:0.8rem;}
+
+	.populaire img
+	{
+		height:8rem;
+		margin:0.3rem;
+	}
+	.populaire{
+		height: 8.6rem;
+		align-items: center;
+	}
+	.carac_hotel2 .star_icon{
+		padding-top: 23%;
+	}
+
+/* Activités -  version mobile  */
+
+	.bigbox2
+	{
+		flex-direction: column;
+		width:100%;
+		gap:1.5em;
+	}
+
+	#vieux_port,#pomegues,#frioul,#notre_dame,#longchamps,#calanques
+	{
+		width:100%;
+		height:11em;
+	}
+	#vieux_port .figcaption,#pomegues .figcaption,#frioul .figcaption,
+	#notre_dame .figcaption,#longchamps .figcaption,#calanques .figcaption{font-size:0.9em;}
+	.box2_2,.box2_4
+	{
+		width:100%;
+		height:auto;
+	}
+
+		/*images  of the activities*/
+
+		#vieux_port img {height:8em;}
+		#calanques img {height:8em;}
+		#pomegues img {height:8em;}
+		#frioul img{height:8em;}
+		#notre_dame img{height:8em;}
+		#longchamps img{height:8em;}
+
+
+/*Footer*/
+	footer
+	{
+		flex-direction: column;
+		gap:2rem;
+	}
+	.apropos,.noshebergements,.assistance{font-size:1em;margin-bottom:2%;}
+	.footer_heads{margin-bottom: 4%}
+	.customized{margin-bottom: 0;}
+
+
+}

@@ -1,0 +1,66 @@
+@media screen and (min-width:689px) and (max-width:930px) /* tablette */
+{
+/*Menu de navigation*/
+
+	nav ul      
+	{
+		width:100%;
+	  	display: flex;
+	  	flex-direction:row;
+	  	padding-left:0;
+	}
+
+
+	nav a:hover
+	{
+		border:none;
+	}
+
+	#ancre_activités
+	{
+		color:black;
+	}
+
+/*Filtres et rechercher*/
+	form
+	{
+		width:auto;
+	}
+
+	.map_marker {
+		width: 30px;
+	}
+	#lieu{margin-left: -1px;}
+/*Section 1 : hébergements et les plus populaires*/
+	#box1, #box2, #box3, #box4, #box5, #box6 
+	{
+		width:47%;
+	}
+	.afficherplus h4 
+	{
+		padding-bottom:0;
+	}
+	.bigbox img
+	{
+		height:5rem;
+		margin: 0.25rem;
+	}
+	aside
+	{
+		width:auto;
+		padding-bottom:2rem;
+	}
+	#asidebox1
+	{
+		margin-top:3%;
+	}
+	#asidebox2
+	{
+		gap:2rem;
+	}
+
+	.noshebergements,.assistance
+	{
+		margin-left:0;
+	}
+}
